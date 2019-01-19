@@ -15,23 +15,22 @@ var colorBrown = "#986928";
 var curColor = colorYellow;
 
 var outlineImage = new Image();
-outlineImage.src = "cat.png";
+outlineImage.src = "pics/cat.png";
 
 var outlineImage1 = new Image();
-outlineImage1.src = "1.png";
+outlineImage1.src = "pics/1.png";
 
 var outlineImage2 = new Image();
-outlineImage2.src = "2.png";
+outlineImage2.src = "pics/2.png";
 
 var outlineImage3 = new Image();
-outlineImage3.src = "3.png";
+outlineImage3.src = "pics/3.png";
 
 var outlineImage4 = new Image();
-outlineImage4.src = "4.png";
-
-var curImage = outlineImage;
+outlineImage4.src = "pics/4.png";
 
 context = document.getElementById('canvas').getContext("2d");
+var curImage = outlineImage;
 
 window.onload = function() {
   context.drawImage(curImage, 0, 0, canvWidth, canvHeight);
@@ -69,7 +68,7 @@ function addClick(x, y, dragging)
 }
 
 function redraw(){
-  context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
+  context.clearRect(0, 0, context.canvas.width, context.canvas.height);
 
   /*context.strokeStyle = "#df4b26";*/
   context.lineJoin = "round";
@@ -123,26 +122,31 @@ $('#brown').click(function(e){
 
 $('#cat').click(function(e){
   clear();
+  curImage = outlineImage;
   setImage(outlineImage);
 });
 
 $('#pic1').click(function(e){
   clear();
+  curImage = outlineImage1;
   setImage(outlineImage1);
 });
 
 $('#pic2').click(function(e){
   clear();
+  curImage = outlineImage2;
   setImage(outlineImage2);
 });
 
 $('#pic3').click(function(e){
   clear();
+  curImage = outlineImage3;
   setImage(outlineImage3);
 });
 
 $('#pic4').click(function(e){
   clear();
+  curImage = outlineImage4;
   setImage(outlineImage4);
 });
 
