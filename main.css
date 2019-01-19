@@ -1,0 +1,65 @@
+body {
+	line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+	border: 1px solid #CCC;
+  margin: 10px;
+}
+
+.clear {
+	width: 25px;
+	height: 25px;
+  cursor: pointer;
+}
+
+.yellow {
+	width: 40px;
+  height: 20px;
+  border: 1px solid #ccc;
+	margin-left: 15px;
+	background-color: #ffcf33;
+	cursor: pointer;
+}
+
+.green {
+	width: 40px;
+  height: 20px;
+  border: 1px solid #ccc;
+	margin-left: 15px;
+	background-color: #659b41;
+	cursor: pointer;
+}
+
+.purple {
+	width: 40px;
+  height: 20px;
+  border: 1px solid #ccc;
+	margin-left: 15px;
+	background-color: #cb3594;
+	cursor: pointer;
+}
+
+.brown {
+	width: 40px;
+  height: 20px;
+  border: 1px solid #ccc;
+	margin-left: 15px;
+	background-color: #986928;
+	cursor: pointer;
+}
+
+.pic {
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	margin-left: 15px;
+}
+
+.tools {
+	display: flex;
+}
